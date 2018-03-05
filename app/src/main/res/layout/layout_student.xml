@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:minHeight="150dp"
+    android:weightSum="3">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:id="@+id/name_student"
+            tools:text="@string/app_name"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            />
+        <LinearLayout
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:padding="16dp"
+
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:id="@+id/stud_fac"
+                android:layout_height="match_parent"
+                tools:text="37"
+                android:gravity="left|center"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:id="@+id/stud_enno"
+                android:layout_height="match_parent"
+                tools:text="37"
+                android:gravity="right|center"
+                android:textColor="@android:color/black"/>
+
+        </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="0.8"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:weightSum="1"
+            >
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:id="@+id/stud_present"
+                android:layout_height="match_parent"
+                tools:text="37"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:background="@android:color/holo_green_light"
+                android:textColor="@android:color/white"
+                android:clickable="true"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:id="@+id/stud_absent"
+                android:layout_height="match_parent"
+                tools:text="37"
+                android:clickable="true"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:background="@android:color/holo_red_dark"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.60"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:text="Attendence: "
+            android:textSize="30dp"
+            android:gravity="end|center"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:id="@+id/percent_attend"
+            android:textSize="30dp"
+            android:gravity="end|center"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.60"
+        android:orientation="horizontal">
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:src="@android:drawable/ic_media_previous"
+            android:gravity="end|center"
+            android:id="@+id/prev"
+            />
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+
+            android:src="@android:drawable/ic_media_next"
+            android:gravity="end|center"
+            android:id="@+id/next"
+            />
+    </LinearLayout>
+   <!-- <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:text="Update"
+        android:id="@+id/update"/>
+    !-->
+
+
+</LinearLayout>
